@@ -1477,6 +1477,18 @@ name = "lean"
 source = { git = "https://github.com/Julian/tree-sitter-lean", rev = "d98426109258b266e1e92358c5f11716d2e8f638" }
 
 [[language]]
+name = "monad"
+scope = "source.monad"
+injection-regex = "monad"
+file-types = ["monad", "mo"]
+comment-tokens = "//"
+indent = { tab-width = 2, unit = " " }
+
+[[grammar]]
+name = "monad"
+source = { git = "https://tangled.org/monad-lang/tree-sitter-monad", rev = "65b42306dffe23e9d8400dfebc33cd12d7f65a7f" }
+
+[[language]]
 name = "lpf"
 comment-token = "#"
 scope = "source.lpf"
